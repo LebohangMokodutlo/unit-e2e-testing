@@ -8,6 +8,8 @@
         <test-driven />
         <vue-props :count="count" @increment="incrementCount" @decrement="decrementCount" />
 
+        <button id="trig-counter" @click="incrementCounter">ADD</button>
+        <p>{{ counter }}</p>
     </div>
   </template>
   
@@ -34,7 +36,8 @@
     },
     data() {
     return {
-      count: 0
+      count: 0,
+      counter: 0
     };
   },
   methods: {
@@ -43,6 +46,9 @@
     },
     decrementCount() {
       this.count--;
+    },
+    incrementCounter() {
+      this.counter++;
     }
   }
 }
