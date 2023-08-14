@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'ComponentMethod',
+  name: 'MethodComponent',
   data () {
     return { message: 'Hello, world!' }
   },

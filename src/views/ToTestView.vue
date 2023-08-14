@@ -6,14 +6,8 @@
         <count-char />
         <method-component />
         <test-driven />
-        <vue-props />
-      <button id="trig-counter" @click="incrementCounter">ADD</button>
-      <p>{{ counter }}</p>
+        <vue-props :count="count" @increment="incrementCount" @decrement="decrementCount" />
 
-      <br>
-
-      <p>another: {{ counter }}</p>
-    <button id="trig-counter" @click="turncounter">add</button>
     </div>
   </template>
   
@@ -29,16 +23,28 @@
 
   export default {
     name: 'ToTestView',
+    components: {
+        AlbumAxios,
+        AxiosComponent,
+        CountChar,
+        MethodComponent,
+        MyAxios,
+        TestDriven,
+        VueProps
+    },
     data() {
-      return {
-        counter: 0,
-      };
+    return {
+      count: 0
+    };
+  },
+  methods: {
+    incrementCount() {
+      this.count++;
     },
-    methods: {
-      incrementCounter() {
-        this.counter++;
-      },
-    },
-  };
-  </script>
+    decrementCount() {
+      this.count--;
+    }
+  }
+}
+</script>
   
