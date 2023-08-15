@@ -1,9 +1,9 @@
 <template>
     <div>
     <p>{{ phrase }}</p>
-    <p2>{{ words }}</p2>
+    <p>{{ words }}</p>
     <br>
-    <p1>number of characters: {{ count() }}</p1>
+    <p>number of characters: {{ count() }}</p>
     </div>
 </template>
 

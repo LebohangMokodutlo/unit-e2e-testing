@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>the old message: {{ message }}</p>
-        <p1>the new in CAPS message: {{ capitalizeMessage() }}</p1>
+        <p>the new in CAPS message: {{ capitalizeMessage() }}</p>
       </div>
 </template>
 

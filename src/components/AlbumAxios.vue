@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="divIt">
         <ul>
             <li v-for="album in albums" :key="album.title">id: {{ album.id }}... album title: {{ album.title }}</li>
         </ul>
@@ -7,7 +7,7 @@
     </template>
     
     <script>
-    import {axios} from 'axios'
+    import axios from 'axios'
     
     export default {
       name: 'AlbumAxios',
